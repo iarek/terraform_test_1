@@ -16,6 +16,7 @@ provider "azurerm" {
   pwdalias        = "value"
 }
 
+# Creates resource group
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroupNEW"
   location = "West Europe"

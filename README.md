@@ -1,4 +1,8 @@
 <!-- BEGIN_TF_DOCS -->
+# README.md
+
+This is the readme of the example repository for terraform-docs poc.
+
 ## Requirements
 
 | Name | Version |
@@ -26,9 +30,13 @@ No modules.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_some_vars"></a> [some\_vars](#input\_some\_vars) | Some value descirption | `number` | `10` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_some_value"></a> [some\_value](#output\_some\_value) | n/a |
 <!-- END_TF_DOCS -->

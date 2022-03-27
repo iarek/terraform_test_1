@@ -1,3 +1,9 @@
+/**
+  * # README.md
+  *
+  * This is the readme of the example repository for terraform-docs poc.
+  */
+
 # Configure the Azure provider
 terraform {
   required_providers {
@@ -16,7 +22,19 @@ provider "azurerm" {
   #  pwdalias        = "value"
 }
 
-# Creates resource group
+variable "some_vars" {
+  description = "Some value descirption"
+  type        = number
+  default     = 10
+}
+
+
+/**
+  * # README.md
+  *
+  * This is some resource.
+  */
+// Creates resource group
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroupNEW"
   location = "West Europe"
@@ -50,4 +68,8 @@ resource "azurerm_virtual_network" "example" {
   tags = {
     environment = "Production"
   }
+}
+
+output "some_value" {
+  value = "Some Value"
 }

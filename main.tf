@@ -13,7 +13,7 @@ terraform {
 provider "azurerm" {
   features {}
   subscription_id = "4e5d226b-e71d-4384-8ca3-1cc183c291de"
-  pwdalias        = "value"
+  #  pwdalias        = "value"
 }
 
 # Creates resource group
@@ -28,6 +28,7 @@ resource "azurerm_resource_group" "example" {
   location = "West Europe"
 }
 
+# create some not important resource
 resource "azurerm_virtual_network" "example" {
   name                = "example-network"
   location            = azurerm_resource_group.example.location

@@ -1,8 +1,15 @@
+#repos:
+#  - repo: https://github.com/terraform-docs/terraform-docs
+#    rev: "v0.16.0"
+#    hooks:
+#      #-id: terraform-docs
+#      #- id: terraform_fmt
+#      - id: terraform-docs-go
+#        args: ["markdown", "table", "--output-file", "README.md", "."]
+
 repos:
-  - repo: https://github.com/terraform-docs/terraform-docs
-    rev: "v0.16.0"
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.62.3
     hooks:
-      #-id: terraform-docs
-      #- id: terraform_fmt
-      - id: terraform-docs-go
-        args: ["markdown", "table", "--output-file", "README.md", "."]
+      - id: terraform_fmt
+      - id: terraform_validate
